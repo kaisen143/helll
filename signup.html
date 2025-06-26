@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook Sign Up Clone</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 430px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.logo {
+  color: #1877f2;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.signup-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.signup-box h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.signup-box p {
+  font-size: 14px;
+  color: #606770;
+  margin-bottom: 15px;
+}
+
+form .row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.gender label {
+  flex: 1;
+  background: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+form button {
+  width: 100%;
+  background-color: #42b72a;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form .terms {
+  font-size: 11px;
+  color: #777;
+  margin-top: 10px;
+}
+
+form .login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+form .login-link a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">facebook</h1>
+    <div class="signup-box">
+      <h2>Create a new account</h2>
+      <p>It's quick and easy.</p>
+      <form>
+        <div class="row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
+        </div>
+
+        <label>Birthday</label>
+        <div class="row">
+          <select>
+            <option>Jun</option>
+            <!-- add other months -->
+          </select>
+          <select>
+            <option>26</option>
+            <!-- add other days -->
+          </select>
+          <select>
+            <option>2025</option>
+            <!-- add other years -->
+          </select>
+        </div>
+
+        <label>Gender</label>
+        <div class="row gender">
+          <label><input type="radio" name="gender"> Female</label>
+          <label><input type="radio" name="gender"> Male</label>
+          <label><input type="radio" name="gender"> Custom</label>
+        </div>
+
+        <input type="text" placeholder="Mobile number or email" required>
+        <input type="password" placeholder="New password" required>
+
+        <p class="terms">
+          People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a><br><br>
+          By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+        </p>
+
+        <button type="submit">Sign Up</button>
+        <p class="login-link"><a href="#">Already have an account?</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
