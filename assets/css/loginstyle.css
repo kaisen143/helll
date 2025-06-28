@@ -1,0 +1,19 @@
+#hello1 
+{
+	height: 500px;
+	width: 100%;
+	border: 2px solid;
+}
+#hello2 
+{
+	height: 400px;
+	width: 100%;
+	border: 2px solid;
+	display: flex;
+}
+#hello3 
+{
+	height: 400px;
+	width: 100%;
+	border: 2px solid green;
+}
