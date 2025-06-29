@@ -65,8 +65,7 @@
 					<div class="carousel-item active">
 						<img src="assets/images/home1.jpg" alt="Los Angeles" class="d-block w-100">
 						<div class="carousel-caption">
-						<a href="signup.php" class="enter">Sign in</a>
-						<a href="login.php" class="welcome">Login</a>
+						
 							<h3>✨ Welcome, traveler, to a land so grand,</h3>
 							<p>Welcome to a place where dreams come alive and every corner tells a story. Here, nature’s beauty and ancient wonders blend to create unforgettable memories. Step into a world filled with magic and adventure, where your journey begins with awe and delight. We’re thrilled to have you explore this enchanting destination—your perfect escape awaits.
 
@@ -77,8 +76,7 @@
 					<div class="carousel-item">
 						<img src="assets/images/home2.jpg" alt="Chicago" class="d-block w-100">
 						<div class="carousel-caption">
-							<a href="signup.php" class="enter" >Sign in</a>
-							<a href="login.php" class="welcome">Login</a>
+							
 						<h3>✨ Welcome, traveler, to a land so grand,</h3>
 							<p>Welcome to a place where dreams come alive and every corner tells a story. Here, nature’s beauty and ancient wonders blend to create unforgettable memories. Step into a world filled with magic and adventure, where your journey begins with awe and delight. We’re thrilled to have you explore this enchanting destination—your perfect escape awaits.
 
@@ -88,8 +86,7 @@
 					<div class="carousel-item">
 						<img src="assets/images/home3.jpg" alt="New York" class="d-block w-100">
 						<div class="carousel-caption">
-								<a href="signup.php" class="enter">Sign in</a>
-								<a href="login.php" class="welcome">Login</a>
+							
 							<h3>✨ Welcome, traveler, to a land so grand,</h3>
 							<p>Welcome to a place where dreams come alive and every corner tells a story. Here, nature’s beauty and ancient wonders blend to create unforgettable memories. Step into a world filled with magic and adventure, where your journey begins with awe and delight. We’re thrilled to have you explore this enchanting destination—your perfect escape awaits.
 
@@ -109,104 +106,7 @@
 
 		</section>
 		
-	
-		<footer class="hello">
-			<h1 class="text-center mt-5 mb-5">Contact</h1>
-			<div  class="container-fluid">
-				<div class="container">
-					<div class="row gap-3 " >
 
-						<div class="col k mt-5 p-3 bg-dark  text-center">
-							<h1 style="color: white; margin-top: 10px; margin-bottom: 10px ;">Contact For Any Queries</h1>
-							<input type="textbox" placeholder="Full Name"><br>
-							<input type="textbox" placeholder="Email Address">
-							<br>
-							<textarea rows="4" cols="40" placeholder="Message"></textarea><br>
-							<input type="submit"  class="ren2" value="Send"><br>
-						</div>
-
-						<div class="col  mt-5 p-3  text-center bg-light">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.540598745585!2d85.32773519999999!3d27.7314672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191780acf2a5%3A0xbba21002062d13d9!2sLe%20Sherpa%20Restaurant!5e0!3m2!1sen!2snp!4v1750743975054!5m2!1sen!2snp" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-
-
-
-
-					</div>
-
-				</div>
-
-			</div>
-		</footer>
-
-		<footer class ="demo">
-			<h5 class="text-center mt-5 mb-5 ">INFO</h5>
-			<div  class="container-fluid">
-				<div class="container">
-					<div class="row gap-3 bg-dark hell" >
-						<div class="col  mt-5 p-3   text-center" >
-							<h1> Bhuwan Nepal Tourism</h1><br>
-							<h2> Contact</h2><br>
-							<p>nepaltourism.com.np<br>
-								01-4528604
-							</p><br>
-							<h2> Opening hour</h2><br>
-							<p>
-								Opening Hours: 24hours a day
-
-								(Monday to Friday)
-							</p>
-							<a href="login.php"><i class="fa-brands fa-facebook " ></i></a>
-							<a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-							<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-						</div>
-						<div class="col  mt-5 p-3   text-center">
-							<h3> For Reservation</h3><br>
-							<p>
-								Call us at: +977-9801159480,
-								01-4528604
-							</p>
-							<h4> location</h4><br>
-							<p>
-								Maharajgunj, Butwal, Nepal
-								Opposite of President House
-							</p>
-						</div>
-						<div class="col  pt-5  ">
-							<h3> Quick links</h3><br>
-							<ul class="mt-1 pt-5">
-								<li class="mb-2">
-									<a href="">Home</a>
-								</li>
-								<li class="mb-2">
-									<a href="#">About Us</a>
-								</li>
-								<li class="mb-2">
-									<a href="#">tourism aport</a>
-								</li>
-								<li class="mb-2">
-									<a href="#">Career</a>
-								</li>
-								<li class="mb-2">
-									<a href="#">Events</a>
-								</li>
-								<li class="mb-2">
-									<a href="#">Contacts</a>
-								</li>
-								<li class="mb-2">
-									<a href="#">Reviews</a>
-								</li>
-							</ul>
-						</div>
-
-
-
-					</div>
-
-				</div>
-
-			</div>
-		</footer>
 
 
 

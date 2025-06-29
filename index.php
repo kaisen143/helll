@@ -1,3 +1,40 @@
+<?php
+
+
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="bhuwan_db";
+
+$conn=new mysqli($servername,$username,$password,$dbname);
+
+if($conn->connect_error)
+{
+	die("Connection failed: " . $conn->connect_error);
+}
+
+if(isset($_POST["save"]))
+{
+	
+	$name=$_POST["name"];
+	$email=$_POST["email"];
+	$message=$_POST["message"];
+
+	$sql = "INSERT INTO contact(name,email,message)VALUES('$name','$email','$message')";
+
+	if($conn->query($sql)===TRUE)
+	{
+		echo "send successfully ";
+	}
+	else
+	{
+		echo "Error in message";
+	}
+	$conn->close();
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,20 +60,20 @@
 					<div class="collapse navbar-collapse" id="mynavbar">
 						<ul class="navbar-nav mx-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:void(0)">Home</a>
+								<a class="nav-link" href="home.php">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="about.php">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="javascript:void(0)">Contact</a>
+								<a class="nav-link" href="contact.php">Contact</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">FrontEnd</a></li>
-									<li><a class="dropdown-item" href="#">Back End</a></li>
-									<li><a class="dropdown-item" href="#">Database</a></li>
+									<li><a class="dropdown-item" href="industries.php">Our Industries</a></li>
+									<li><a class="dropdown-item" href="services.php">Services</a></li>
+									<li><a class="dropdown-item" href="info.php">Info</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -65,25 +102,31 @@
 					<div class="carousel-item active">
 						<img src="assets/images/home1.jpg" alt="Los Angeles" class="d-block w-100">
 						<div class="carousel-caption">
-						
-							<p>Escape to a heavenly realm where every moment sparkles with peace and wonder. Bask in breathtaking views, gentle breezes, and serene landscapes that soothe your soul. Discover the magic of a place where dreams and nature unite perfectly.</p>
-
+					
+							<p>✨ “Let your soul wander where the mountains kiss the sky and the rivers whisper tales of time.”</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img src="assets/images/home2.jpg" alt="Chicago" class="d-block w-100">
 						<div class="carousel-caption">
-						<p>Escape to a heavenly realm where every moment sparkles with peace and wonder. Bask in breathtaking views, gentle breezes, and serene landscapes that soothe your soul. Discover the magic of a place where dreams and nature unite perfectly.</p>
-
+							
+								<p>✨ “Let your soul wander where the mountains kiss the sky and the rivers whisper tales of time.”</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img src="assets/images/home3.jpg" alt="New York" class="d-block w-100">
 						<div class="carousel-caption">
-							<p>Escape to a heavenly realm where every moment sparkles with peace and wonder. Bask in breathtaking views, gentle breezes, and serene landscapes that soothe your soul. Discover the magic of a place where dreams and nature unite perfectly.</p>
-
+								<p>✨ “Let your soul wander where the mountains kiss the sky and the rivers whisper tales of time.”</p>
 						</div>
 					</div>
+						<div class="carousel-item">
+						<img src="assets/images/mount.png" alt="New York" class="d-block w-100">
+						<div class="carousel-caption">
+								<p>✨ “Let your soul wander where the mountains kiss the sky and the rivers whisper tales of time.”</p>
+						</div>
+					</div>
+					
+				<!-- The slideshow/carousel -->
 				</div>
 
 				<!-- Left and right controls/icons -->
@@ -103,7 +146,7 @@
 				<div class="row gx-5">
 					<div class="col">
 						<div class="p-3 border bg-light">
-							<img src="assets/images/home4.jpg" height="350px" width="100%">
+							<img src="assets/images/home4.jpg" height="290px" width="100%">
 
 						</div>
 					</div>
@@ -219,7 +262,7 @@
 									It attracts adventurers, trekkers, and nature lovers from around the world.
 									Enjoy close views from Everest Base Camp, helicopter tours, or scenic flights.
 									A once-in-a-lifetime experience in the heart of the Himalayas.		
-								.</p>
+								</p>
 								<a href="#" class="btn btn-primary">RS.30000</a>
 							</div>
 						</div>
@@ -238,12 +281,14 @@
 					<div class="row gap-3 " >
 
 						<div class="col k mt-5 p-3 bg-dark  text-center">
+							<form method="post">
 							<h1 style="color: white; margin-top: 10px; margin-bottom: 10px ;">Contact For Any Queries</h1>
-							<input type="textbox" placeholder="Full Name"><br>
-							<input type="textbox" placeholder="Email Address">
+							<input type="textbox" name="name" placeholder="Full Name"><br>
+							<input type="textbox" name="email" placeholder="Email Address">
 							<br>
-							<textarea rows="4" cols="40" placeholder="Message"></textarea><br>
-							<input type="button"  class="ren2" value="Send"><br>
+							<textarea rows="4" cols="40" name="message" placeholder="Message"></textarea><br>
+							<input type="submit"  class="ren2" name="save" value="Send"><br>
+						</form>
 						</div>
 
 						<div class="col  mt-5 p-3  text-center bg-light">
@@ -277,7 +322,7 @@
 
 								(Monday to Friday)
 							</p>
-							<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook " ></i></a>
+							<a href="login.php"><i class="fa-brands fa-facebook " ></i></a>
 							<a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
 							<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
 						</div>
@@ -303,7 +348,7 @@
 									<a href="#">About Us</a>
 								</li>
 								<li class="mb-2">
-									<a href="#">tourism sport</a>
+									<a href="#">tourism aport</a>
 								</li>
 								<li class="mb-2">
 									<a href="#">Career</a>

@@ -25,7 +25,7 @@ if(isset($_POST["save"]))
 	$birthday="$month-$day-$year";
 	$gender=$_POST["gender"];
 	$email=$_POST["email"];
-   $newpassword = password_hash($_POST["newpassword"], PASSWORD_DEFAULT);
+  $newpassword = password_hash($_POST["newpassword"], PASSWORD_DEFAULT);
 	
 	$sql = "INSERT INTO tourist_signup(username,birthday,gender,email,newpassword) VALUES ('$username','$birthday','$gender','$email','$newpassword')";
 
